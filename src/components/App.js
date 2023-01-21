@@ -1,9 +1,11 @@
 import React from 'react';
-import './App.css';
-
+import Collection from './BotCollection';
+import BotArmy from './YourBotArmy';
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
+      <BotArmy/> 
+      <Collection/>
     </div>
   );
 }

@@ -5,3 +5,5 @@ function Collection(){
         <div className='card'></div>
     )
 }
+
+export default Collection;
