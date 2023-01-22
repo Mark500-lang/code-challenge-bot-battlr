@@ -8,8 +8,8 @@ function Collection({bots, addToArmy, handleDelete}){
         Defender: "fa-solid fa-shield-halved",
         Support: "fa-solid fa-circle-plus",
         Medic: "fa-solid fa-truck-medical",
-        Witch: "fa-solid fa-hat-witch",
-        Captain: "fa-solid fa-star-sharp-half-stroke",
+        Witch: "fa-solid fa-wand-magic-sparkles",
+        Captain: "fa-solid fa-star",
     };
     return(
         <div className='row recruitField'>
@@ -22,8 +22,7 @@ function Collection({bots, addToArmy, handleDelete}){
                                     <img src={bot.avatar_url} className="card-img-top m4 rob-img" alt="placeholder"/>
                                     <div className="card-body">
                                         <div className="header">
-                                            {bot.name }
-                                            <i className={botTypeClasses[bot.bot_class]} />
+                                            <span className='botTitle'> {bot.name }  <i className={botTypeClasses[bot.bot_class]} /></span>
                                         </div>
                                         <div className="meta text-wrap">
                                             <small>{bot.catchphrase}</small>

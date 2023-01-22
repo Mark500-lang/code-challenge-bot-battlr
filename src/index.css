@@ -9,10 +9,15 @@
 .rob-img{
   background-color: rgb(206, 206, 216);
 }
+.botTitle{
+  font-size: larger;
+  font-weight: bolder;
+}
 .properties{
   text-align: center;
 }
 #removeButton{
   padding: 5px;
+  padding-top: 10px;
   text-align: center;
 }
