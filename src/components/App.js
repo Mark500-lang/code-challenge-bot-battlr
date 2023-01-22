@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import Collection from './BotCollection';
+import React from 'react';
 import BotArmy from './YourBotArmy';
 function App() {
   
   return (
     <div className="App">
-      <BotArmy/> 
+      <BotArmy/>
     </div>
   );
 }

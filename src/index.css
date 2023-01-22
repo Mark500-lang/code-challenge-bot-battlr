@@ -1,3 +1,18 @@
+.displayField{
+  background-color: rgba(8, 207, 197, 0.897);
+  min-height: 50vh;
+  padding-bottom: 30px;
+}
+.recruitField{
+  background-color: rgb(255, 255, 255);
+}
 .rob-img{
-  background-color: rgba(255, 38, 0, 0.74);
+  background-color: rgb(206, 206, 216);
+}
+.properties{
+  text-align: center;
+}
+#removeButton{
+  padding: 5px;
+  text-align: center;
 }
