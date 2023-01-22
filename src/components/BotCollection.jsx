@@ -24,7 +24,7 @@ function Collection({bots, addToArmy, handleDelete}){
                                         <div className="header">
                                             <span className='botTitle'> {bot.name }  <i className={botTypeClasses[bot.bot_class]} /></span>
                                         </div>
-                                        <div className="meta text-wrap">
+                                        <div className="meta text-wrap text-muted">
                                             <small>{bot.catchphrase}</small>
                                         </div>
                                         <div className="card-footer text-muted properties">
