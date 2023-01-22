@@ -25,11 +25,11 @@ function BotArmy(){
 
 //DELETE request
     function handleDelete(bot) {
-        fetch(`http://localhost:8002/bots/${bot.id}`, {
+        fetch(`http://localhost:8001/bots/${bot.id}`, {
             method: "DELETE",
-            headers: {
+            /*headers: {
                 "Content-Type": "application/json"
-            }
+            }*/
         }).then(res => {
             setBots(bots.filter(({id}) => id !== bot.id));
             setArmyRobot(armyRobot.filter(({id}) => id !== bot.id));
