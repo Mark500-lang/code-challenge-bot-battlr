@@ -24,11 +24,19 @@ function BotArmy(){
   }, [])
 
 //DELETE request
-function handleDelete(id){
-    fetch("http://localhost:8001/bots/`${id}`", {
-        method: "DELETE"
-    })
-}
+    function handleDelete(bot) {
+        fetch(`http://localhost:8002/bots/${bot.id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => {
+            setBots(bots.filter(({id}) => id !== bot.id));
+            setArmyRobot(armyRobot.filter(({id}) => id !== bot.id));
+            console.log(res)
+        })
+    }
+
 //Adding robot to army field
   const addToArmy =(id)=>{
     const bot = bots.find(bot => bot.id === id)
@@ -61,11 +69,11 @@ function handleDelete(id){
                                         </div>
                                         <div className="card-footer text-muted properties">
                                             <span className="card-text"><i className="fa-solid fa-heart-pulse"></i> {bot.health} </span>
-                                            <span className="card-text"><i class="fa-solid fa-bolt"></i> {bot.damage} </span>
-                                            <span className="card-text"><i class="fa-solid fa-shield-halved"></i> {bot.armor} </span>
+                                            <span className="card-text"><i className="fa-solid fa-bolt"></i> {bot.damage} </span>
+                                            <span className="card-text"><i className="fa-solid fa-shield-halved"></i> {bot.armor} </span>
                                         </div> 
                                         <div id='removeButton'>
-                                            <button type="button" onClick={()=>handleDelete(bot.id)} className='btn btn-danger btn-sm'>X</button>
+                                            <button type="button" onClick={() =>handleDelete(bot)} className='btn btn-danger btn-sm'>X</button>
                                         </div>                                                         
                                     </div>
                                 </div>

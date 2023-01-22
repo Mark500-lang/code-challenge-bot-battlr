@@ -29,11 +29,11 @@ function Collection({bots, addToArmy, handleDelete}){
                                         </div>
                                         <div className="card-footer text-muted properties">
                                             <span className="card-text"><i className="fa-solid fa-heart-pulse"></i> {bot.health} </span>
-                                            <span className="card-text"><i class="fa-solid fa-bolt"></i> {bot.damage} </span>
-                                            <span className="card-text"><i class="fa-solid fa-shield-halved"></i> {bot.armor} </span>
+                                            <span className="card-text"><i className="fa-solid fa-bolt"></i> {bot.damage} </span>
+                                            <span className="card-text"><i className="fa-solid fa-shield-halved"></i> {bot.armor} </span>
                                         </div> 
                                         <div id='removeButton'>                  
-                                            <button type="button" onClick={()=>handleDelete(bot.id)} className='btn btn-danger btn-sm'>X</button>
+                                            <button type="button" onClick={()=>handleDelete(bot)} className='btn btn-danger btn-sm'>X</button>
                                         </div>
                                     </div>
                                 </div>
