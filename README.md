@@ -1,3 +1,15 @@
+## TITLE
+
+code-challenge-bot-battlr
+
+### AUTHOR : Name Date 
+
+Name: Mark Kantet Sangiriaki  21/1/2023
+
+## Live Project Link
+
+// https://code-challenge-bot-battlr-six.vercel.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -45,26 +57,23 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Starting Up Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In the terminal on the project's directory run  'json-server --watch db.json --port 8001'
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. HTML	
+2. CSS	
+3. JavaScript  
+4. React
+*****	*****
 
-### Making a Progressive Web App
+## Contact Information	
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Email : markkantet@gmail.com	
+*****	*****
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## [License](LICENSE)
+- MIT License	
+- Copyright (c) YEAR Author	: Copyright (c) 2023 Mark Sangiriaki
